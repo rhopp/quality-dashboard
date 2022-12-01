@@ -1,7 +1,7 @@
 apiVersion: tekton.dev/v1beta1
 kind: PipelineRun
 metadata:
-  name: dashboard-backend-on-pull-request
+  name: dashboard-backend-on-push
   annotations:
     pipelinesascode.tekton.dev/on-cel-expression: |
       event == "push" && target_branch == "main" && "backend/***".pathChanged()
