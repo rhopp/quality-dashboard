@@ -1,0 +1,23 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: quality-dashboard
+  description: QE Dashboard
+  labels:
+    example.com/custom: my-label
+  annotations:
+    example.com/service-discovery: sdfsdf
+    circleci.com/project-slug: github.dev/rhopp/quality-dashboard
+  tags:
+    - java
+  links:
+    - url: https://frontend-quality-dashboarnknw-rhtap-qe-shared-tenant.apps.stone-prd-m01.84db.p1.openshiftapps.com/
+      title: Admin Dashboard
+      icon: dashboard
+      type: admin-dashboard
+spec:
+  type: website
+  lifecycle: production
+  owner: artist-relations-team
+  system: public-websites
+
